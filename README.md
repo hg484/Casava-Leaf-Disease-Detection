@@ -19,10 +19,9 @@ Similar looking images had different labels and in an extreme case, **Two identi
 <li>StratifiedKFold data split </li>
 This cross-validation object is a variation of KFold that returns stratified folds. The folds are made by preserving the percentage of samples for each class.
 <p align="center"><img src="./Diagrams%20and%20Images/StrarifiedKFold.png"></p>
-
 <li>Bitempered Logistic Loss</li>
  <a href="https://ai.googleblog.com/2019/08/bi-tempered-logistic-loss-for-training.html">Bitempered Logistic Loss</a> is a noise resistant loss function created by the Google Research which can deal with both small and large outliers that may exists in a dataset. <a href="https://paperswithcode.com/method/label-smoothing">Label Smoothing</a> was used along with the loss funtion, it is a regularization technique which improves the ability of your model to generalize and improve the overall performance of the model. 
-
+<br><br>
 <li>Test Time Augmentations (TTA)</li>
 Test Time augmentations is a technique which boost a model'performance but applying augmentation during inference. Inference is performed on multiple altered versions of the same image.
 <p align="center"><img src="./Diagrams and Images/test_time_augmentation_concept.png"></p>
