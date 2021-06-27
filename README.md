@@ -1,4 +1,4 @@
-# Cassava Disease detection using leaf images
+# Casava Disease detection using leaf images
 As the second-largest provider of carbohydrates in Africa, cassava is a key food security crop grown by smallholder farmers because it can withstand harsh conditions however  viral diseases have became a major sources of poor crop yield.
 
 Goal of the project is to identify the type of disease present on a Cassava Leaf by blending predictions provided by multiple image models. Techniques like Test Time Augmentation and Noise resistant loss function were used to deal with the noisy dataset.
@@ -21,12 +21,12 @@ This cross-validation object is a variation of KFold that returns stratified fol
 <p align="center"><img src="./Diagrams%20and%20Images/StrarifiedKFold.png"></p>
 
 <li>Bitempered Logistic Loss</li>
-Bitempered Logistic Loss is a noise resistant loss function created by the Google Research which can deal with both small and large outliers that may exists in a dataset. [More Information](https://ai.googleblog.com/2019/08/bi-tempered-logistic-loss-for-training.html).[Label Smoothing](https://paperswithcode.com/method/label-smoothing) was used along with the loss funtion, it is a regularization technique which improves the ability of your model to generalize and improve the overall performance of the model. 
+ <a href="https://ai.googleblog.com/2019/08/bi-tempered-logistic-loss-for-training.html">Bitempered Logistic Loss</a> is a noise resistant loss function created by the Google Research which can deal with both small and large outliers that may exists in a dataset. <a href="https://paperswithcode.com/method/label-smoothing">Label Smoothing</a> was used along with the loss funtion, it is a regularization technique which improves the ability of your model to generalize and improve the overall performance of the model. 
 
 <li>Test Time Augmentations (TTA)</li>
 Test Time augmentations is a technique which boost a model'performance but applying augmentation during inference. Inference is performed on multiple altered versions of the same image.
 <p align="center"><img src="./Diagrams and Images/test_time_augmentation_concept.png"></p>
-<p align="center">Image borrowed from [stepup.ai](stepup.ai)</p>
+  <p align="center">Image borrowed from <a href="stepup.ai">stepup.ai</a></p>
 
 </ol>
 
@@ -46,7 +46,7 @@ The data was divided into 5 stratified splits, and a specific image model is cre
 The Metrics used to judge the performance are Accuracy and F1 score.Accuracy is the ratio of the number of labels predicted for the data that exactly match the corresponding set of labels in actual labels of the data. F1 score measures a test's accuracy, it is calculated using precision and recall of the test.
 
 
-##Add image
+## Add confusion matrix image
 
 <p align="center"> <img src="./Diagrams and Images/Model_performace classification report.png"> </p>
 
