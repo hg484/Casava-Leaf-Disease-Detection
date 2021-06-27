@@ -1,0 +1,1 @@
+# Model weights of ResNet101 are too large (>100 MB) , cannot be uploaded on github. EfficientNetB0 and EfficientNetB4 are uploaded here.
